@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #d0cec9; font-family: Arial, sans-serif; font-size: 13px; color: #111; padding: 20px; }
+  .frame { background: #d9d7d2; border: 1px solid #aaa; padding: 20px; width: 1000px; }
+  h1 { font-size: 20px; font-weight: bold; margin-bottom: 14px; }
+  .section-box { border: 1px solid #888; padding: 12px; margin-bottom: 12px; background: #d9d7d2; }
+  .row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  label { min-width: 90px; font-size: 13px; }
+  .field { background: white; border: 1px solid #888; height: 20px; width: 160px; }
+  .field.sm { width: 90px; }
+  .field.md { width: 130px; }
+  .btn-row { display: flex; gap: 8px; margin: 10px 0; }
+  button { background: #d9d7d2; border: 1px solid #555; padding: 4px 12px; font-size: 12px; cursor: default; }
+  .search-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+  th { text-align: left; padding: 3px 6px; font-weight: normal; border-bottom: 1px solid #888; }
+  td { padding: 3px 6px; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <h1>Gestión de Empleados</h1>
+  <div class="section-box">
+    <div class="row">
+      <label>Nombres:</label><div class="field"></div>
+      <label>Apellidos:</label><div class="field"></div>
+    </div>
+    <div class="row">
+      <label>DNI:</label><div class="field sm"></div>
+      <label>Teléfono:</label><div class="field sm"></div>
+      <label>Correo:</label><div class="field"></div>
+    </div>
+    <div class="row">
+      <label>Cargo:</label><div class="field md"></div>
+      <label>Turno:</label><div class="field sm"></div>
+    </div>
+  </div>
+  <div class="btn-row">
+    <button>Registrar</button>
+    <button>Editar</button>
+    <button>Eliminar</button>
+    <button>Listar Todos</button>
+  </div>
+  <div class="search-row">
+    <span>Buscar:</span><div class="field"></div>
+    <button>Buscar por DNI</button>
+    <button>Filtrar por Cargo</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Nombres</th><th>Apellidos</th><th>DNI</th><th>Cargo</th><th>Turno</th><th>Teléfono</th><th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
